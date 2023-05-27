@@ -1,0 +1,48 @@
+><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria con bootstrap y javascript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1 class="text-center mt-3"> Galeria Bootstrtap y JavaScript </h1>
+    <div class="container" id="galeria">
+        <div class="container text-center " id="galeria_imagen">
+            <div class="row text-center">
+                <img id="imggaleria" src="img/arbol.jpg.jpg" alt="imagen" class="img-fluid" >
+            </div>
+        </div>
+          <div class="container" id="galeria_miniaturas">
+            <div class="row">
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/animales.jpg.jpg">
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/tortuga.jpg.jpg">  
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/arbol.jpg.jpg"> 
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/isquierda.jpg.jpg">
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/derecha.jpg.jpg">  
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/perro2.jpg.jpg"> 
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/perro.jpg.jpg"> 
+                <img class="rounded mx-auto img-fluid miniatura" style="width:250px ;" onclick="javascript:document.getElementById('imggaleria').src=this.src" src="img/tigre.jpg.jpg"> 
+            </div>
+          </div>
+    </div>
+    <style>
+       .miniatura{
+        border: 2px solid;
+        border-color: rgb(38, 7, 67);
+
+       }
+       .miniatura:hover{
+         cursor: pointer;
+         opacity: 0.5;
+         border-color: rgb(252, 0, 0);
+       }
+    </style>
+
+    <script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>
